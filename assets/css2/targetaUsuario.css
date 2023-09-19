@@ -1,0 +1,197 @@
+.card-usuario {
+    /* display: flex; */
+    width: 400px;
+    box-shadow: 0 0 3px 1px rgba(50, 209, 116, 0.8);
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-usuario .avatar {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #fff;
+    box-shadow: 0 0 3px 1px rgba(75, 75, 75, 0.8);
+    margin-bottom: 1rem;
+}
+
+.card-usuario .seccion-avatar {
+    /* background: linear-gradient(#D482FF, #80A7FF); */
+    background: linear-gradient(#003f33, #1BC1A3, #003f33);
+
+    padding: 20px;
+    color: #fff;
+}
+
+.card-usuario img {
+    width: 100%;
+}
+
+.card-usuario .datos-usuario span,
+.card-usuario .datos-usuario {
+    display: block;
+    text-align: center;
+}
+
+.card-usuario .datos-usuario+.datos-usuario {
+    margin-top: 1rem;
+}
+
+.card-usuario .datos-usuario span:nth-child(1) {
+    font-size: 1.3em;
+}
+
+.card-usuario .datos-usuario span:nth-child(2) {
+    font-size: .8em;
+}
+
+.card-usuario .seccion-datos {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 20px;
+}
+
+.card-usuario .seccion-datos h5 {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #0a591c;
+}
+
+.card-usuario .seccion-datos p {
+    font-size: .8em;
+    color: #454545;
+    margin-bottom: 1.25rem;
+}
+
+.seccion-datos .botones-redes {
+    margin-bottom: 1.25rem;
+}
+
+.seccion-datos .botones-redes a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.seccion-datos>a {
+    color: #454545;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.seccion-datos>a:hover {
+    color: #0e4224;
+}
+
+.seccion-datos .botones-redes a.facebook {
+    background-color: #5E80FF;
+}
+
+.seccion-datos .botones-redes a.twitter {
+    background-color: #36BEC7;
+}
+
+.seccion-datos .botones-redes a.instagram {
+    /* background: linear-gradient(#D482FF, #80A7FF); */
+    background: linear-gradient(#003f33, #1BC1A3, #003f33);
+
+}
+
+.seccion-datos .bio-usuario {
+    font-size: 0.9rem;
+    color: #858585;
+}
+
+@media (max-width: 780px) {
+    .card-usuario {
+        flex-direction: column;
+        width: 320px;
+    }
+
+    .card-usuario .seccion-avatar {
+        display: flex;
+        align-items: center;
+    }
+
+    .seccion-avatar .avatar {
+        margin-right: 1rem;
+        width: 55px;
+        height: 55px;
+        border: 3px solid #fff;
+        margin-bottom: 0;
+    }
+
+    .card-usuario .seccion-avatar .datos-usuario {
+        margin: 0;
+        margin-right: 1rem;
+    }
+
+    .card-usuario .seccion-avatar .datos-redes {
+        flex-grow: 1;
+        flex-basis: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .card-usuario .datos-usuario span:nth-child(1) {
+        font-size: 1.1em;
+    }
+
+    .card-usuario .datos-usuario span:nth-child(2) {
+        font-size: .7em;
+    }
+}
+
+/* 
+<!--==========================
+=            html            =
+===========================-->
+<div class="card-usuario">
+    <div class="seccion-avatar">
+        <div class="avatar">
+            <div class="img-avatar">
+                <img src="http://localhost/multimedia/relleno/img-c10.png" alt="">
+            </div>
+        </div>
+        <div class="datos-redes">
+            <div class="datos-usuario">
+                <span>145</span>
+                <span>Seguidores</span>
+            </div>
+            <div class="datos-usuario">
+                <span>75</span>
+                <span>Seguidos</span>
+            </div>
+        </div>
+    </div>
+    <div class="seccion-datos">
+        <h5>Camila alejandra</h5>
+        <p><i class="fas fa-map-marker-alt"></i> Colombia / Cartagena</p>
+        <div class="botones-redes">
+            <a href="#" class="btn-social facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="btn-social twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="btn-social instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <p class="bio-usuario">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <a href="#" title="">Ver perfil</a>
+    </div>
+</div>
+<!--====  End of html  ====--> */

@@ -1,0 +1,184 @@
+/*=====================================
+estilos de la utilidad
+Copiar esto
+=====================================*/
+
+.btn-animado {
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 9px;
+    box-shadow: 0 0 12px 1px rgba(0, 0, 0, .15);
+    background-color: #fff;
+    border: 1px solid #392cb0;
+    color: #352cb0;
+    cursor: pointer;
+    transition: all ease-in 150ms;
+    overflow: hidden;
+}
+
+.btn-animado i {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1rem;
+    font-size: 1.7rem;
+    opacity: 1;
+}
+
+.btn-animado:hover {
+    background-color: #392cb0;
+    color: #fff;
+}
+
+.btn-animado:active {
+    background-color: #22848A;
+}
+
+.color-facebook {
+    border: 1px solid #3B69FF;
+    color: #3B69FF;
+}
+
+.color-facebook:hover {
+    background-color: #3B69FF;
+    color: #fff;
+}
+
+.color-facebook:active {
+    background-color: #3155C9;
+}
+
+.color-instagram {
+    border: 1px solid #003f33;
+    color: #1BC1A3;
+}
+
+.color-instagram .tex-icono {
+    color: #003f33;
+}
+
+.color-instagram:hover {
+    background: linear-gradient(#003f33, #1BC1A3, #003f33);
+
+    color: #fff;
+}
+
+.color-instagram:active {
+    background: linear-gradient(#003f33, #1BC1A3, #003f33);
+
+}
+
+.color-instagram:hover .tex-icono {
+    color: #fff;
+}
+
+.btn-animado.animacion-uno:hover i {
+    animation: anim-uno 350ms ease-in normal both;
+    transform: translate(0);
+}
+
+@keyframes anim-uno {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    70% {
+        transform: translateY(.5rem);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.btn-animado.animacion-dos:hover i {
+    animation: anim-dos 350ms ease-in normal both;
+    transform: translate(0);
+}
+
+@keyframes anim-dos {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    70% {
+        transform: translateY(-.5rem);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.btn-animado.animacion-tres:hover i {
+    animation: anim-tres 350ms ease-in normal both;
+    transform: translate(0);
+}
+
+@keyframes anim-tres {
+    from {
+        transform: translateX(-200%);
+        opacity: 0;
+    }
+
+    70% {
+        transform: translateX(1rem);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.btn-animado.animacion-cuatro:hover i {
+    animation: anim-cuatro 250ms ease-in normal both;
+    transform: scale(0) rotate(0deg);
+}
+
+@keyframes anim-cuatro {
+    from {
+        transform: scale(0) rotate(0deg) translateX(0);
+    }
+
+    to {
+        transform: scale(2.75) rotate(-15deg) translateX(-.25rem);
+    }
+}
+
+
+
+/* 
+<button type="button" class="btn-animado animacion-uno">
+<i class="fas fa-arrow-alt-circle-down"></i>
+<span class="tex-icono">
+    boton animado
+</span>
+</button>
+
+<button type="button" class="btn-animado animacion-dos">
+<i class="fas fa-arrow-alt-circle-up"></i>
+<span class="tex-icono">
+    boton animado
+</span>
+</button>
+
+<button type="button" class="btn-animado animacion-tres color-facebook">
+<i class="fab fa-facebook-square"></i>
+<span class="tex-icono">
+    boton animado
+</span>
+</button>
+
+<button type="button" class="btn-animado animacion-cuatro color-instagram">
+<i class="fab fa-instagram"></i>
+<span class="tex-icono">
+    boton animado
+</span>
+</button> */

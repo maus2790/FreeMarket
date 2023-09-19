@@ -1,0 +1,43 @@
+/* Estilos por defecto para dispositivos de escritorio */
+.navbar-search-block {
+    width: 94%;
+    margin: auto;
+}
+
+/* Estilos para dispositivos móviles con un ancho máximo de 100% */
+@media (max-width: 767px) {
+    .navbar-search-block {
+        width: 84%;
+        margin: auto;
+
+        /* Puedes ajustar el margen según tus necesidades */
+    }
+}
+
+/* Estilos para ocultar la lista al principio */
+#dropdownMenu {
+    display: none;
+}
+
+/* Estilos para cambiar la posición del ícono hacia abajo */
+#dropdownButton.active i {
+    transform: rotate(270deg);
+    transition: transform 0.3s;
+}
+
+/* Estilos para redondear el icono */
+#dropdownButton {
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+#buscador {
+    height: 40px;
+}
+
+#closeButton {
+
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 0px 18px;
+}

@@ -1,0 +1,104 @@
+    /* Definir los colores personalizados */
+    :root {
+        --verde: #003f33;
+        /* Color primario */
+        --verde-claro: hsl(160, 50%, 60%);
+        /* Color más claro */
+        --verde-mas-oscuro: hsl(160, 50%, 20%);
+        /* Color más oscuro */
+        --verde-transparente: rgba(0, 63, 51, 0.5);
+        /* Color con transparencia */
+    }
+
+    .card-primary.card-outline {
+        border-top: 4px solid #058f75;
+    }
+
+    .card-success.card-outline-tabs>.card-header a.active,
+    .card-success.card-outline-tabs>.card-header a.active:hover {
+        border-top: 3px solid #058f75;
+    }
+
+    /* Reemplazar botones de Bootstrap */
+    .btn-primary {
+        background-color: var(--verde);
+        border-color: var(--verde);
+        color: white;
+        /* Ajusta el color del texto según tu preferencia */
+    }
+
+    .btn-secondary {
+        background-color: var(--verde-claro);
+        border-color: var(--verde-claro);
+        color: white;
+        /* Ajusta el color del texto según tu preferencia */
+    }
+
+    /* Reemplazar alertas de Bootstrap */
+    .alert-primary {
+        background-color: var(--verde);
+        border-color: var(--verde);
+        color: white;
+        /* Ajusta el color del texto según tu preferencia */
+    }
+
+    .alert-secondary {
+        background-color: var(--verde-claro);
+        border-color: var(--verde-claro);
+        color: white;
+        /* Ajusta el color del texto según tu preferencia */
+    }
+
+    /* Estilo para aplicar color primario personalizado */
+    .verde {
+        background-color: var(--verde);
+        color: white;
+        /* Ajusta el color del texto según tu preferencia */
+        padding: 10px;
+        margin: 10px;
+    }
+
+    /* Reemplazar fondos de Bootstrap */
+    .bg-primary {
+        background-color: var(--verde) !important;
+        /* Añadir !important para asegurarte de que se aplique */
+    }
+
+    .bg-secondary {
+        background-color: var(--verde-claro) !important;
+        /* Añadir !important para asegurarte de que se aplique */
+    }
+
+    /* Reemplazar bordes de Bootstrap */
+    .border-primary {
+        border-color: var(--verde) !important;
+        /* Añadir !important para asegurarte de que se aplique */
+    }
+
+    .border-secondary {
+        border-color: var(--verde-claro) !important;
+        /* Añadir !important para asegurarte de que se aplique */
+    }
+
+
+    /* Reemplazar colores de texto de Bootstrap */
+    .text-primary {
+        color: var(--verde);
+    }
+
+    .text-secondary {
+        color: var(--verde-claro);
+    }
+
+    /* Otros estilos de texto personalizado */
+    .text-mas-oscuro {
+        color: var(--verde-mas-oscuro);
+    }
+
+    .text-transparente {
+        color: var(--verde-transparente);
+    }
+
+    .sidebar-dark {
+        background-color: var(--verde) !important;
+    }

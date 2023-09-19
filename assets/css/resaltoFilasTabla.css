@@ -1,0 +1,6 @@
+/* Estilo para resaltar filas */
+.fila-resaltada {
+    background-color: #0dcaf0b2;
+    /* Cambia el color de fondo a tu elección */
+    color: black;
+}
