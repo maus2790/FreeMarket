@@ -2,7 +2,7 @@
 require_once 'config/db.php'; // Importa la conexión a la base de datos
 require_once 'models/UserModel.php'; // Importa el modelo de usuario
 require_once 'controllers/AuthController.php'; // Importa el controlador de autenticación
-/* 123456789*/
+/* 123456789 fgdfgdf*/
 $sessionOptions = array(
     'cookie_lifetime' => 1800,
     // 30 minutos en segundos
